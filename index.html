@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/einstein/einstein-head.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Einstein Run</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="pusher"></div> -->
+        <div class="main-button">
+            <div id="play-btn">
+                <img src="./images/einstein/einstein-head.png">
+                <h1 id="play-btn-text">Einstein <br> Run!</h1>
+            </div>
+            <div class="input-name-field">
+                <form class="group" id="group">
+                    <input type="text" id="name-input" required>
+                    <label for="name-input">PLAYER NAME:</label>
+                    <div class="bar"></div>
+                </form>
+                <div class="hard-mode">
+                    <h4>Hard mode: <strong class="tick">off</strong></h4>
+                </div>
+            </div>
+        </div>
+        <div id="game-screen"></div>
+        <div class="menu-tabs">
+            <div class="story-container">
+                <div class="story-title">
+                    <img src="./images/story.png">
+                    <h1 class="menu-title">Game Story</h1>
+                </div>
+                <div id="game-story">
+                    <p>One of the greatest minds of all time, Albert Einstein, has been giving it
+                        thought
+                        to
+                        the idea that he
+                        is no longer a good physicist. <strong> If this is true, the evolution of humanity could
+                            take an unexpected turn</strong>, will it be our fate?.</p>
+                </div>
+            </div>
+            <div class="highscores-container">
+                <div class="highscore-title">
+                    <img src="./images/trophy.png">
+                    <h1 class="menu-title">High Scores</h1>
+                </div>
+                <div id="highscores">
+                    <span id="hard-mode-highscore"></span>
+                    <ol id="highscores-list">
+
+                    </ol>
+                </div>
+            </div>
+
+            <div class="controls-container">
+                <div class="controls-title">
+                    <img src="./images/control.png">
+                    <h1 class="menu-title">Controls</h1>
+                </div>
+                <div id="controls">
+                    <div id="controls-explanation">
+                        <div>
+                            <p>
+                                <strong>An equation will be displayed</strong> on the top left corner of your screen.
+                                The possible solutions will head towards you, choose the right one by either staying on
+                                <span class="important-instructions">ground level, jumping medium or jumping high!</span>
+                            </p>
+                        </div>
+                        <div class="control-arrows">
+                            <img class="control-img" src="./images/direction-arrows.png">
+                            <div>
+                                <p><i class="fas fa-arrow-up"></i>
+                                    High jump</p>
+                                <p><i class="fas fa-arrow-down"></i>
+                                    Medium jump</p>
+                                <p><i class="fas fa-arrow-left"></i>
+                                    Move left</p>
+                                <p><i class="fas fa-arrow-right"></i>
+                                    Move right</p>
+                            </div>
+                        </div>
+                        <p class="italic">Pro tip: The quicker you answer, the more points you get!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="signature">Developed by: <strong><a href="https://github.com/knajjars/einstein-run" target="_blank">Khalil
+                Najjar
+            </a> </strong> </footer>
+</body>
+<script src="./js/Audio/audio.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="./js/Menu.js"></script>
+<script src="./js/Background.js"></script>
+<script src="./js/Level.js"></script>
+<script src="./js/Score.js"></script>
+<script src="./js/Heart.js"></script>
+<script src="./js/Einstein.js"></script>
+<script src="./js/Question.js"></script>
+<script src="./js/Obstacle.js"></script>
+<script src="./js/MathGenerator.js"></script>
+<script src="./js/ScoreScreen.js"></script>
+<script src="./js/main.js"></script>
+
+</html>

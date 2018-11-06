@@ -1,0 +1,374 @@
+* {
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("./images/main-background.jpg");
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-button {
+  /* width: 100%; */
+  margin: auto;
+}
+
+#play-btn {
+  width: 400px;
+  height: 200px;
+  background-color: #2090da;
+  border-radius: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#play-btn:hover {
+  background-color: #004990;
+  cursor: pointer;
+  border: 4px solid #002547;
+}
+
+#play-btn > img {
+  width: 160px;
+  height: 150px;
+}
+
+#play-btn > h1 {
+  width: 177px;
+  color: white;
+  font-size: 3em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hard-mode {
+  background-color: #2090da;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: -26px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.hard-mode:hover {
+  border: 3px solid #024990;
+  color: white;
+  cursor: pointer;
+}
+
+.active-hard-mode {
+  background-color: #ff6666;
+  border: 3px solid #024990;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-tabs {
+  display: flex;
+  justify-self: flex-end;
+  justify-content: center;
+  width: 100%;
+}
+.menu-tabs > * {
+  margin: 0 10px;
+  width: 200px;
+  height: 50px;
+  align-self: flex-end;
+}
+
+/* story tab */
+
+.story-container {
+  color: white;
+  background-color: rgba(37, 112, 224, 0.5);
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  /* height: 50px; */
+  transition: width ease-in-out 0.2s, height ease-in-out 0.2s;
+  -webkit-transition: width ease-in-out 0.2s, height ease-in-out 0.2s;
+}
+
+.story-container:hover {
+  width: 300px;
+  height: 220px;
+}
+
+.story-title {
+  display: flex;
+  justify-content: center;
+}
+
+.story-container img {
+  width: 35px;
+  height: 35px;
+}
+
+#game-story {
+  display: none;
+  opacity: 0;
+  width: 300px;
+  padding: 10px;
+  padding-top: 0px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  text-align: justify;
+  transition: opacity linear 0.7s;
+  -webkit-transition: opacity linear 0.7s;
+}
+/* highscore tab */
+
+.highscores-container {
+  color: white;
+  background-color: rgba(37, 112, 224, 0.5);
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: width ease-in-out 0.2s, height ease-in-out 0.2s;
+  -webkit-transition: width ease-in-out 0.2s, height ease-in-out 0.2s;
+}
+
+.highscores-container:hover {
+  width: 300px;
+  height: 220px;
+}
+.highscores-container img {
+  width: 35px;
+  height: 35px;
+}
+
+.highscore-title {
+  display: flex;
+}
+
+#highscores {
+  display: none;
+}
+
+#highscores-list {
+  opacity: 0;
+  text-align: justify;
+  transition: opacity linear 0.7s;
+  -webkit-transition: opacity linear 0.7s;
+}
+
+.italic {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bolder;
+  font-size: 0.7em;
+}
+
+/* controls tab */
+
+.controls-container {
+  color: white;
+  background-color: rgba(37, 112, 224, 0.5);
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: width ease-in-out 0.3s, height ease-in-out 0.3s;
+  -webkit-transition: width ease-in-out 0.3s, height ease-in-out 0.3s;
+}
+
+.controls-container:hover {
+  width: 400px;
+  height: 400px;
+}
+
+.controls-container > .controls-title > img {
+  width: 35px;
+  height: 35px;
+}
+
+.control-img {
+  height: 60px;
+  width: 60px;
+}
+
+.controls-title {
+  display: flex;
+}
+
+#controls {
+  display: none;
+  opacity: 0;
+}
+
+#controls-explanation {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: justify;
+}
+
+.control-arrows {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.important-instructions {
+  color: #5fcc81;
+  font-weight: bolder;
+}
+
+/* end of tabs */
+
+.menu-title {
+  font-size: 1.4em;
+  margin: 5px;
+}
+
+.container-btn {
+  display: flex;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 98vh;
+}
+
+.signature {
+  font-family: Avenir;
+  position: absolute;
+  top: 95vh;
+  left: 30px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .signature {
+    top: 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* input name form */
+* {
+  box-sizing: border-box;
+}
+.input-name-field {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 400px;
+  height: 110px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.group {
+  width: 100%;
+  height: 110px;
+  overflow: hidden;
+  position: relative;
+}
+
+label {
+  position: absolute;
+  top: 36.66667px;
+  color: rgba(255, 255, 255, 0.5);
+  font: 400 36.66667px;
+  cursor: text;
+  transition: 0.25s ease;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding-top: 36.66667px;
+  border: none;
+  border-radius: 0;
+  color: white;
+  background: #333;
+  font-size: 36.66667px;
+  transition: 0.3s ease;
+}
+input:valid ~ label {
+  top: 0;
+  font: 700 22px;
+  color: rgba(255, 255, 255, 0.5);
+}
+input:focus {
+  outline: none;
+}
+input:focus ~ label {
+  top: 0;
+  font: 700 22px;
+  color: #2196f3;
+}
+input:focus ~ .bar:before {
+  transform: translateX(0);
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #333 inset;
+  -webkit-text-fill-color: white !important;
+}
+
+.bar {
+  background: rgba(255, 255, 255, 0.5);
+  content: "";
+  width: 400px;
+  height: 3.66667px;
+  transition: 0.3s ease;
+  position: relative;
+}
+.bar:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  background: #2196f3;
+  transform: translateX(-100%);
+}
+
+::selection {
+  background: rgba(33, 150, 243, 0.3);
+}
+
+/* ------------end of input name form */
