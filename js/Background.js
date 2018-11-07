@@ -28,4 +28,4 @@ class Background {
 }
 
 var backgroundImg = new Image();
-backgroundImg.src = "../images/background.jpg";
+backgroundImg.src = "../game-einstein-run/images/background.jpg";

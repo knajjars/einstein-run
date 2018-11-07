@@ -224,20 +224,23 @@ var einstein2 = new Image();
 var einstein2Running = new Image();
 var einstein3 = new Image();
 var einstein3Running = new Image();
-einstein1.src = "../images/einstein/einstein1.png";
-einstein1Running.src = "../images/einstein/einsteinRunning1.png";
-einstein2.src = "../images/einstein/einstein2.png";
-einstein2Running.src = "../images/einstein/einsteinRunning2.png";
-einstein3.src = "../images/einstein/einstein3.png";
-einstein3Running.src = "../images/einstein/einsteinRunning3.png";
+einstein1.src = "../game-einstein-run/images/einstein/einstein1.png";
+einstein1Running.src =
+  "../game-einstein-run/images/einstein/einsteinRunning1.png";
+einstein2.src = "../game-einstein-run/images/einstein/einstein2.png";
+einstein2Running.src =
+  "../game-einstein-run/images/einstein/einsteinRunning2.png";
+einstein3.src = "../game-einstein-run/images/einstein/einstein3.png";
+einstein3Running.src =
+  "../game-einstein-run/images/einstein/einsteinRunning3.png";
 
 var rightAnswerImg = new Image();
 var wrongAnswerImg = new Image();
-rightAnswerImg.src = "../images/emote_heart.png";
-wrongAnswerImg.src = "../images/emote_heartBroken.png";
+rightAnswerImg.src = "../game-einstein-run/images/emote_heart.png";
+wrongAnswerImg.src = "../game-einstein-run/images/emote_heartBroken.png";
 
 var tipImg = new Image();
-tipImg.src = "../images/emote_idea.png";
+tipImg.src = "../game-einstein-run/images/emote_idea.png";
 
 window.addEventListener("keydown", controller.keyListener);
 window.addEventListener("keyup", controller.keyListener);

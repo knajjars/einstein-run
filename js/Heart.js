@@ -17,4 +17,4 @@ class Heart {
 }
 
 heartImg = new Image();
-heartImg.src = "../images/heart.png";
+heartImg.src = "../game-einstein-run/images/heart.png";

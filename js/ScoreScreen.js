@@ -131,7 +131,7 @@ class ScoreScreen {
 }
 
 var imgSuccess = new Image();
-imgSuccess.src = "../images/score-screen.jpg";
+imgSuccess.src = "../game-einstein-run/images/score-screen.jpg";
 
 var imgFailure = new Image();
-imgFailure.src = "../images/score-screen-lose.png";
+imgFailure.src = "../game-einstein-run/images/score-screen-lose.png";

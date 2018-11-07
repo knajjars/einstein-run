@@ -83,4 +83,4 @@ class Obstacle {
 }
 
 var brainImg = new Image();
-brainImg.src = "../images/brain.png";
+brainImg.src = "../game-einstein-run/images/brain.png";
