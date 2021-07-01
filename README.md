@@ -1,5 +1,7 @@
 # Einstein Run!
 
+![Alt text](/einstein-run.png?raw=true "Einstein Run!")
+
 I developed this game during my coding bootcamp. 
 
 ## Game story
@@ -14,4 +16,6 @@ jumping high!
 
 **PRO TIP: THE QUICKER YOU ANSWER, THE MORE POINTS YOU GET!**
 
-![Alt text](/einstein-run.png?raw=true "Einstein Run!")
+---
+
+The game is hosted on Github Pages. You can play [here](https://knajjars.github.io/game-einstein-run/)
